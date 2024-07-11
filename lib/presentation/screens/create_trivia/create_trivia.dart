@@ -261,7 +261,7 @@ class CreateTriviaScreenState extends ConsumerState<CreateTriviaScreen> {
 
                 ElevatedButton.icon(
                   onPressed: () {
-                    Share.share('https://pub.dev/packages/share_plus', subject: 'Hey! Start to play Smart Trivia.');
+                    Share.share('Hey! Start to play Smart Trivia https://apps.apple.com/us/app/smart-drinks-nss/id6508169189', subject: 'Hey! Start to play Smart Trivia');
                   }, 
                   icon: Icon(Icons.share_rounded), 
                   label: Text('Invite your friends'),
