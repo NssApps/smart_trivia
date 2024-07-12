@@ -29,6 +29,7 @@ class CreateTriviaScreenState extends ConsumerState<CreateTriviaScreen> {
     final difficulty = ref.watch(difficultyProvider);
     final type = ref.watch(typeProvider);
     final categories = ref.watch(categoriesProvider);
+    final box = context.findRenderObject() as RenderBox?;
 
     List<Widget> numQuestionOptions() {
       return [
@@ -260,7 +261,10 @@ class CreateTriviaScreenState extends ConsumerState<CreateTriviaScreen> {
 
                 ElevatedButton.icon(
                   onPressed: () {
-                    Share.share('Hey! Start to play Smart Trivia https://apps.apple.com/us/app/smart-drinks-nss/id6508169189', subject: 'Hey! Start to play Smart Trivia');
+                    Share.share('Hey! Start to play Smart Trivia https://apps.apple.com/us/app/smart-drinks-nss/id6508169189', 
+                      subject: 'Hey! Start to play Smart Trivia',
+                      sharePositionOrigin: Rect.fromLTWH(box!.size.width / 2, box.size.height - 50, 1, 1),
+                    );
                   }, 
                   icon: Icon(Icons.share_rounded), 
                   label: Text('Invite your friends'),
