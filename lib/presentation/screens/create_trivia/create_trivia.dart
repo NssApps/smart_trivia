@@ -1,11 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:smart_trivia/presentation/providers/categories_provider.dart';
 import 'package:smart_trivia/presentation/providers/create_trivia_providers.dart';
-import 'package:share_plus/share_plus.dart';
 
 class CreateTriviaScreen extends ConsumerStatefulWidget {
   const CreateTriviaScreen({super.key});

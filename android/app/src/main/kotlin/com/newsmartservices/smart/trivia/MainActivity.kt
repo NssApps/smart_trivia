@@ -1,4 +1,4 @@
-package com.example.smart_trivia
+package com.newsmartservices.smart.trivia
 
 import io.flutter.embedding.android.FlutterActivity
 
