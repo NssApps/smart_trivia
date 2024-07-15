@@ -261,7 +261,7 @@ class CreateTriviaScreenState extends ConsumerState<CreateTriviaScreen> {
 
                 ElevatedButton.icon(
                   onPressed: () {
-                    Share.share('Hey! Start to play Smart Trivia https://apps.apple.com/us/app/smart-drinks-nss/id6508169189', 
+                    Share.share('Hey! Start to play Smart Trivia https://apps.apple.com/us/app/smart-trivia-nss/id6535647288', 
                       subject: 'Hey! Start to play Smart Trivia',
                       sharePositionOrigin: Rect.fromLTWH(box!.size.width / 2, box.size.height - 50, 1, 1),
                     );
